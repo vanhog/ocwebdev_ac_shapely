@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-raleway: 'Raleway', sans-serif;
+  --color-buttonblue: #745cf9;
+}
+
+.text-preset-h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 2.5rem;
+  color: white;
+}
+
+.text-preset-h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+  color: #0e1015;
+}
+
+.text-preset-h2-light {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.text-preset-h3 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+  color: white;
+}
+
+.text-preset-p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+  color: #8c979e;
+}
+
+.text-preset-button {
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.06725rem;
+  line-height: 1.5rem;
+  color: white;
+}
