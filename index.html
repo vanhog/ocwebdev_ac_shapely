@@ -6,23 +6,28 @@
     <title>Shapley Theme Replica Project</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="font-raleway flex flex-col justify-center items-center">
+  <body
+    class="bg-gray-400 font-raleway flex flex-col justify-center items-center"
+  >
     <div class="w-96 md:w-3xl lg:w-full">
       <header>
-        <nav class="bg-white h-30 text-4xl font-light text-center">
-          SHAPELY THEME REPLICA - THIS IS WORK IN PROGRESS
+        <nav class="bg-white flex justify-between text-center py-4">
+          <div class="text-preset-h2">SHAPELY THEME REPLICA</div>
+          <div class="text-preset-h2">HAM</div>
         </nav>
       </header>
-      <main>
-        <section id="hero" class="">
-          <div
-            name="content"
-            class="h-screen p-2 bg-[url(./images/header_background_image.png)] bg-cover bg-no-repeat bg-fixed flex flex-col justify-baseline items-center"
-          >
-            <h1 class="text-center text-preset-h1 pt-32">
-              We Change Everything WordPress
+      <main class="bg-white">
+        <!--Hero---------------------------------------------------------------->
+        <section
+          id="hero"
+          class="h-96 bg-[url(./images/header_background_image.png)] bg-cover bg-no-repeat bg-fixed flex flex-col items-center py-4"
+        >
+          <div class="mt-5">
+            <h1 class="text-center text-preset-h1 text-2xl md:text-3xl">
+              We Change Everything
+              <span class="md:hidden"><br /></span>WordPress
             </h1>
-            <h3 class="text-center text-preset-h3 my-3">
+            <h3 class="text-center text-preset-h3 text-xs md:text-sm my-3">
               This is the only WordPress theme you will ever want to use.
             </h3>
             <div class="flex flex-col md:flex-row items-center">
@@ -31,41 +36,48 @@
               >
                 READ MORE
               </button>
-              <button class="py-4 w-50 my-3 text-preset-button border-2">
+              <button class="py-4 my-3 w-50 text-preset-button border-2">
                 DOWNLOAD NOW
               </button>
             </div>
           </div>
         </section>
+        <!--Hero-end------------------------------------------------------------>
+
+        <!--SEO----------------------------------------------------------------->
         <section
           id="seo"
-          class="flex flex-col md:flex-row justify-center items-center my-12 pb-6"
+          class="flex flex-col md:flex-row justify-center items-center my-20 pb-6 bg-white"
         >
           <div><img src="./images/macbook.png" alt="" /></div>
-          <div>
-            <h2 class="text-preset-h2">SEO Friendly</h2>
-            <p class="text-preset-p my-6">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, pellentesque eu, pretium quis, sem.
+          <div class="w-90">
+            <h2 class="text-preset-h2 text-2xl">SEO Friendly</h2>
+            <p class="text-preset-p text-xs my-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              pulvinar luctus sem, eget porta orci. Maecenas molestie dui id
+              diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae
+              ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus
+              ac ligula id ultricies.
             </p>
             <button class="bg-buttonblue my-3 py-4.5 w-50 text-preset-button">
               READ MORE
             </button>
           </div>
         </section>
+        <!--SEO-end----------------------------------------------------------->
+
+        <!--Portfolio--------------------------------------------------------->
         <section
           id="portfolio"
-          class="flex flex-col md:flex-row justify-center items-center bg-gray-100 pt-20 pb-32 px-2"
+          class="flex flex-col md:flex-row justify-center items-center bg-gray-100 pt-20 pb-24 px-2"
         >
-          <div class="pb-12">
-            <h2 class="text-preset-h2">Portfolio Section</h2>
-            <p class="text-preset-p my-6">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes. Leo eget bibendum
-              sodales, augue velit cursus nunc
+          <div class="pb-4 w-90">
+            <h2 class="text-preset-h2 text-2xl">Portfolio Section</h2>
+            <p class="text-preset-p text-xs my-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              pulvinar luctus sem, eget porta orci. Maecenas molestie dui id
+              diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae
+              ligula et interdum.
             </p>
             <button class="bg-buttonblue my-3 py-4.5 w-50 text-preset-button">
               SEE IN ACTION
@@ -75,20 +87,22 @@
             <img src="./images/macbook_2.png" alt="" />
           </div>
         </section>
-        <!-- Small Prallax Section------------------------------------------>
+        <!--Portfolio-end-------------------------------------------------------->
+
+        <!--Small Prallax Section------------------------------------------------>
         <section
           id="hero"
           class="bg-[url(./images/parallax.jpeg)] bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center"
         >
-          <div class="">
-            <h1 class="text-center text-preset-h1 mt-24">
+          <div class="pb-4 w-90">
+            <h1 class="text-center text-preset-h1 text-3xl mt-24 mb-6">
               Small Parallax Section
             </h1>
-            <h3 class="text-center text-preset-h3">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu.
+            <h3 class="text-center text-preset-h3 text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              imperdiet rhoncus porta. Ut quis sem quis purus lobortis dictum.
+              Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien, eget
+              tincidunt leo ornare quis.
             </h3>
             <div
               class="flex flex-col md:flex-row justify-center items-center mt-8 mb-36"
@@ -102,30 +116,47 @@
           </div>
         </section>
         <!--Small Parallax Section---END------------------------------------------->
+
         <!--Limitless-------------------------------------------------------------->
         <section
           id="limitless"
-          class="flex flex-col md:flew-row justify-center items-center bg-gray-100 pt-20 pb-4"
+          class="flex flex-col md:flew-row justify-center items-center bg-gray-100 pt-20"
         >
-          <h2 class="text-preset-h2 my-4">Limitless Options</h2>
-          <p class="text-preset-p text-center px-8">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis fusendus qualcumdur parturient montes.
-          </p>
-          <button
-            class="bg-buttonblue my-6 mx-2 py-4.5 w-50 text-preset-button"
-          >
-            DOWNLOAD NOW
-          </button>
+          <div class="pb-4 w-90">
+            <h2 class="text-center text-preset-h2 text-2xl my-4">
+              Limitless Options
+            </h2>
+            <p class="text-preset-p text-xs text-center">
+              Phasellus sed nisi ac dui interdum semper. Etiam consequat
+              fermentum sollicitudin. Fusce vulputate porta faucibus. Vivamus
+              nulla tellus, accumsan non efficitur id, pretium quis ante
+            </p>
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mt-4 mb-2"
+            >
+              <button
+                class="bg-buttonblue my-6 mx-2 py-4.5 w-50 text-preset-button"
+              >
+                DOWNLOAD NOW
+              </button>
+            </div>
+          </div>
           <img src="./images/big_photo.png" alt="" />
         </section>
         <!--Limitless--END--------------------------------------------------------->
         <!--Gallery---------------------------------------------------------------->
         <section
           id="Gallery"
-          class="flex flex-col justify-center items-center-safe bg-black pt-10 pb-20"
+          class="flex flex-col justify-center items-center-safe bg-black pb-0"
         >
+          <div class="text-center pt-16 pb-8">
+            <h2 class="text-preset-h2-light text-2xl mb-10">
+              Our Latest Projects
+            </h2>
+            <p class="text-preset-p-light text-xs text-white">
+              Here is our latest projects. You'll love them!
+            </p>
+          </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center"
           >
@@ -228,27 +259,32 @@
         <!--Testimoniral----------------------------------------------------------->
         <section
           id="testimonial"
-          class="flex flex-col justify-center items-center bg-black py-20"
+          class="flex flex-col justify-center items-center bg-white mt-8"
         >
           <div
-            class="bg-[url(./images/darkbeach.jpg)] bg-cover bg-no-repeat text-white flex flex-col w-full justify-center items-center"
+            class="bg-[url(./images/patrick-fore-V6s1cmE39XM-unsplash.jpg)] bg-cover bg-no-repeat text-white flex flex-col w-full p-0 justify-center items-center"
           >
-            <h2 class="text-preset-h1 py-20">What Our Customers Say</h2>
-            <h3 class="text-preset-h3">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
-            </h3>
-            <img src="./images/mike-muller.jpg.png" alt="" />
-            <p class="text-preset-h2-light">John Doe</p>
+            <div class="w-90 flex flex-col items-center pt-4 pb-16">
+              <div class="text-preset-h1 text-2xl mb-12">
+                What Our Customers Say
+              </div>
+              <h3 class="text-preset-p text-xs text-center mb-8">
+                Integer ut rutrum nulla, sit amet fringilla nisi. Nam nisl
+                velit, vehicula at nibh sed, porttitor sollicitudin ante. Sed
+                justo augue, vestibulum ut efficitur vitae, euismod et justo.
+                Mauris sed mattis ante. Ut ligula lectus, consequat vitae neque
+                ac, gravida hendrerit ante.
+              </h3>
+              <img src="./images/mike-muller.jpg.png" alt="" />
+              <p class="text-preset-h2-light">John Doe</p>
+            </div>
           </div>
         </section>
         <!--Testimonial--END-------------------------------------------------------->
         <!--Main Clients------------------------------------------------------------>
-        <section class="bg-white py-20 flex flex-col items-stretch">
-          <div class="text-center py-10">
-            <h2 class="text-preset-h2">Our Main Clients</h2>
+        <section class="bg-white py-16 flex flex-col items-stretch">
+          <div class="text-center">
+            <h2 class="text-preset-h2 text-2xl">Our Main Clients</h2>
           </div>
           <div>
             <div class="flex flex-row justify-evenly invisible md:visible">
@@ -272,9 +308,9 @@
         <!--Awesome----------------------------------------------------------------->
         <section
           id="awesome"
-          class="flex flex-col md:flex-row justify-around items-center mt-8 py-48 bg-gray-100"
+          class="flex flex-col md:flex-row justify-around items-center mt-8 py-20 bg-gray-100"
         >
-          <div class="text-6xl text-center">
+          <div class="text-3xl text-center">
             Do you like this awesome WordPress theme?
           </div>
           <button
@@ -289,7 +325,13 @@
         class="bg-black text-white flex flex-row flex-wrap justify-between pt-48 pb-16 px-5"
       >
         <div class="text-preset-h2-light my-3 mx-3">
-          Theme by <b>Colorlib</b>. Powered by <b>WordPress</b>
+          Theme by
+          <a class="cursor-pointer" href="https://colorlib.com/">
+            <b>Colorlib</b></a
+          >. Powered by
+          <a class="cursor-pointer" href="https://wordpress.com/"
+            ><b>WordPress</b></a
+          >
         </div>
         <div class="flex flex-col items-end justify-end w-100">
           <!-- If not noted otherwiese, alle SVGs are from SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -424,7 +466,17 @@
         target="_blank"
         rel="noopener noreferrer"
         >Dieter H. Hoogestraat (dee van hog)</a
-      >.
+      >. <br />
+      Testimonial photo by
+      <a
+        href="https://unsplash.com/de/@patrickian4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Patrick Fore</a
+      >
+      on
+      <a
+        href="https://unsplash.com/de/fotos/ozean-unter-blauem-und-grauem-himmel-V6s1cmE39XM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Unsplash</a
+      >
     </div>
   </body>
 </html>
