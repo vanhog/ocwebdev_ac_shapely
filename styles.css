@@ -4,20 +4,32 @@
 @theme {
   --font-raleway: 'Raleway', sans-serif;
   --color-buttonblue: #745cf9;
+  --color-shapelyshale: #041015;
 }
 
-.text-preset-h1 {
-  font-weight: 200;
-  letter-spacing: 0;
-  line-height: 2.5rem;
-  color: white;
-}
+@layer components {
+  .text-preset-h1 {
+    @apply font-light tracking-normal leading-10 text-[2rem] md:leading-16  md:text-6xl text-white  text-center;
+  }
 
-.text-preset-h2 {
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 2rem;
-  color: #0e1015;
+  .text-preset-h2 {
+    @apply font-light tracking-normal leading-8 text-2xl md:text-3xl md:leading-9 text-shapelyshale  text-left;
+  }
+
+  .text-preset-h3 {
+    @apply font-light tracking-normal leading-6 text-xs md:text-sm text-white  text-center;
+  }
+
+  .text-preset-button {
+    @apply font-bold text-xs tracking-[1px] leading-6 text-white text-center;
+  }
+  .attribution {
+    @apply text-sm my-6;
+  }
+
+  .attribution a {
+    @apply text-blue-800;
+  }
 }
 
 .text-preset-h2-light {
@@ -27,26 +39,11 @@
   color: #ffffff;
 }
 
-.text-preset-h3 {
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 2rem;
-  color: white;
-}
-
 .text-preset-p {
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 2rem;
-  color: #8c979e;
-}
-
-.text-preset-button {
-  font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.06725rem;
   line-height: 1.5rem;
-  color: white;
+  color: #8c979e;
 }
 
 .attribution {

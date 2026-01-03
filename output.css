@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
@@ -24,11 +25,16 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-light: 300;
     --font-weight-bold: 700;
+    --tracking-normal: 0em;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-raleway: 'Raleway', sans-serif;
     --color-buttonblue: #745cf9;
+    --color-shapelyshale: #041015;
   }
 }
 @layer base {
@@ -243,6 +249,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -373,6 +382,9 @@
   .bg-fixed {
     background-attachment: fixed;
   }
+  .bg-left {
+    background-position: left;
+  }
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
@@ -484,6 +496,11 @@
       display: none;
     }
   }
+  .md\:inline {
+    @media (width >= 48rem) {
+      display: inline;
+    }
+  }
   .md\:w-3xl {
     @media (width >= 48rem) {
       width: var(--container-3xl);
@@ -499,16 +516,14 @@
       flex-direction: row;
     }
   }
-  .md\:text-3xl {
+  .md\:bg-right {
     @media (width >= 48rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
+      background-position: right;
     }
   }
-  .md\:text-sm {
-    @media (width >= 48rem) {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:w-full {
@@ -522,17 +537,82 @@
     }
   }
 }
-.text-preset-h1 {
-  font-weight: 200;
-  letter-spacing: 0;
-  line-height: 2.5rem;
-  color: white;
-}
-.text-preset-h2 {
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 2rem;
-  color: #0e1015;
+@layer components {
+  .text-preset-h1 {
+    text-align: center;
+    font-size: 2rem;
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
+    color: var(--color-white);
+    @media (width >= 48rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+    @media (width >= 48rem) {
+      --tw-leading: calc(var(--spacing) * 16);
+      line-height: calc(var(--spacing) * 16);
+    }
+  }
+  .text-preset-h2 {
+    text-align: left;
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
+    color: var(--color-shapelyshale);
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    @media (width >= 48rem) {
+      --tw-leading: calc(var(--spacing) * 9);
+      line-height: calc(var(--spacing) * 9);
+    }
+  }
+  .text-preset-h3 {
+    text-align: center;
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
+    color: var(--color-white);
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .text-preset-button {
+    text-align: center;
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    --tw-tracking: 1px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+  }
+  .attribution {
+    margin-block: calc(var(--spacing) * 6);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .attribution a {
+    color: var(--color-blue-800);
+  }
 }
 .text-preset-h2-light {
   font-weight: 400;
@@ -540,24 +620,11 @@
   line-height: 2rem;
   color: #ffffff;
 }
-.text-preset-h3 {
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 2rem;
-  color: white;
-}
 .text-preset-p {
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 2rem;
-  color: #8c979e;
-}
-.text-preset-button {
-  font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.06725rem;
   line-height: 1.5rem;
-  color: white;
+  color: #8c979e;
 }
 .attribution {
   font-size: 1rem;
@@ -576,11 +643,21 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-leading: initial;
+      --tw-tracking: initial;
     }
   }
 }
