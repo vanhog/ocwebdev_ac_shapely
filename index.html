@@ -48,12 +48,18 @@
         <!--SEO----------------------------------------------------------------->
         <section
           id="seo"
-          class="flex flex-col md:flex-row justify-center items-center my-20 pb-6 bg-white"
+          class="flex flex-col md:flex-row justify-center items-center md:justify-evenly my-20 pb-6 bg-white"
         >
-          <div><img src="./images/macbook.png" alt="" /></div>
-          <div class="w-90">
+          <div>
+            <img
+              class="md:w-86.25"
+              src="./images/macbook.png"
+              alt="iBook with Shapely Hero Section on Screen"
+            />
+          </div>
+          <div class="px-4">
             <h2 class="text-preset-h2">SEO Friendly</h2>
-            <p class="text-preset-p text-xs my-6">
+            <p class="text-preset-p my-6 md:w-64">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               pulvinar luctus sem, eget porta orci. Maecenas molestie dui id
               diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae
@@ -70,11 +76,11 @@
         <!--Portfolio--------------------------------------------------------->
         <section
           id="portfolio"
-          class="flex flex-col md:flex-row justify-center items-center bg-gray-100 pt-20 pb-24 px-2"
+          class="flex flex-col md:flex-row justify-center md:justify-evenly items-center py-20 bg-gray-100"
         >
-          <div class="pb-4 w-90">
-            <h2 class="text-preset-h2 text-2xl">Portfolio Section</h2>
-            <p class="text-preset-p text-xs my-6">
+          <div class="px-4">
+            <h2 class="text-preset-h2">Portfolio Section</h2>
+            <p class="text-preset-p my-6 md:w-64">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               pulvinar luctus sem, eget porta orci. Maecenas molestie dui id
               diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae
@@ -85,7 +91,11 @@
             </button>
           </div>
           <div>
-            <img src="./images/macbook_2.png" alt="" />
+            <img
+              class="md:w-86.25"
+              src="./images/macbook_2.png"
+              alt="iBook with Shapely gallery on screen"
+            />
           </div>
         </section>
         <!--Portfolio-end-------------------------------------------------------->
@@ -95,11 +105,11 @@
           id="hero"
           class="bg-[url(./images/parallax.jpeg)] bg-cover bg-no-repeat bg-fixed flex flex-col justify-center items-center"
         >
-          <div class="pb-4 w-90">
-            <h1 class="text-center text-preset-h1 text-3xl mt-24 mb-6">
+          <div class="px-4 md:w-160">
+            <h1 class="text-center text-preset-h1 mt-24 mb-6">
               Small Parallax Section
             </h1>
-            <h3 class="text-center text-preset-h3 text-xs">
+            <h3 class="text-preset-h3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               imperdiet rhoncus porta. Ut quis sem quis purus lobortis dictum.
               Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien, eget
@@ -123,11 +133,9 @@
           id="limitless"
           class="flex flex-col md:flew-row justify-center items-center bg-gray-100 pt-20"
         >
-          <div class="pb-4 w-90">
-            <h2 class="text-center text-preset-h2 text-2xl my-4">
-              Limitless Options
-            </h2>
-            <p class="text-preset-p text-xs text-center">
+          <div class="px-4 md:w-160">
+            <h2 class="text-center text-preset-h2 my-4">Limitless Options</h2>
+            <p class="text-preset-p text-center">
               Phasellus sed nisi ac dui interdum semper. Etiam consequat
               fermentum sollicitudin. Fusce vulputate porta faucibus. Vivamus
               nulla tellus, accumsan non efficitur id, pretium quis ante
@@ -142,7 +150,10 @@
               </button>
             </div>
           </div>
-          <img src="./images/big_photo.png" alt="" />
+          <img
+            src="./images/big_photo.png"
+            alt="Yosemite National Parc View of Half Dome"
+          />
         </section>
         <!--Limitless--END--------------------------------------------------------->
         <!--Gallery---------------------------------------------------------------->
@@ -151,10 +162,8 @@
           class="flex flex-col justify-center items-center-safe bg-black pb-0"
         >
           <div class="text-center pt-16 pb-8">
-            <h2 class="text-preset-h2-light text-2xl mb-10">
-              Our Latest Projects
-            </h2>
-            <p class="text-preset-p-light text-xs text-white">
+            <h2 class="text-preset-h2-light mb-10">Our Latest Projects</h2>
+            <p class="text-preset-p-light text-white">
               Here is our latest projects. You'll love them!
             </p>
           </div>
@@ -168,6 +177,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #1</div>
+                <div class="sr-only">
+                  Background image of river in the mountains
+                </div>
               </div>
             </div>
 
@@ -178,6 +190,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #2</div>
+                <div class="sr-only">
+                  Background image of a woman at the beach
+                </div>
               </div>
             </div>
 
@@ -188,6 +203,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #3</div>
+                <div class="sr-only">
+                  Background image of mountains at sunset
+                </div>
               </div>
             </div>
 
@@ -198,6 +216,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #4</div>
+                <div class="sr-only">
+                  Background image of ski lodge in front of snowy forest
+                </div>
               </div>
             </div>
             <div
@@ -207,6 +228,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #5</div>
+                <div class="sr-only">
+                  Background image of waterfall in the mountains
+                </div>
               </div>
             </div>
             <div
@@ -216,6 +240,10 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #6</div>
+                <div class="sr-only">
+                  Background image from middle of a suspension bridge towards
+                  its end
+                </div>
               </div>
             </div>
             <div
@@ -225,6 +253,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #7</div>
+                <div class="sr-only">
+                  Background image of lake in the mountains
+                </div>
               </div>
             </div>
             <div
@@ -234,6 +265,10 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #8</div>
+                <div class="sr-only">
+                  Background image of waves in front of a beach from a swimmers
+                  view
+                </div>
               </div>
             </div>
             <div
@@ -243,6 +278,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #9</div>
+                <div class="sr-only">
+                  Background image of woman sitting in a canoe on a lake
+                </div>
               </div>
             </div>
             <div
@@ -252,6 +290,9 @@
                 class="flex justify-center items-center text-4xl font-bold text-white opacity-0 hover:opacity-100"
               >
                 <div>Project #10</div>
+                <div class="sr-only">
+                  Background image of satellite view on coastal region
+                </div>
               </div>
             </div>
           </div>
@@ -265,43 +306,45 @@
           <div
             class="bg-[url(./images/patrick-fore-V6s1cmE39XM-unsplash.jpg)] bg-cover bg-no-repeat text-white flex flex-col w-full p-0 justify-center items-center"
           >
-            <div class="w-90 flex flex-col items-center pt-4 pb-16">
-              <div class="text-preset-h1 text-2xl mb-12">
+            <div class="flex flex-col items-center pt-4 pb-16 px-4">
+              <div class="text-preset-h2-light my-12">
                 What Our Customers Say
               </div>
-              <h3 class="text-preset-p text-xs text-center mb-8">
+              <h3 class="text-preset-p-ligth text-center mb-8">
                 Integer ut rutrum nulla, sit amet fringilla nisi. Nam nisl
                 velit, vehicula at nibh sed, porttitor sollicitudin ante. Sed
                 justo augue, vestibulum ut efficitur vitae, euismod et justo.
                 Mauris sed mattis ante. Ut ligula lectus, consequat vitae neque
                 ac, gravida hendrerit ante.
               </h3>
-              <img src="./images/mike-muller.jpg.png" alt="" />
-              <p class="text-preset-h2-light">John Doe</p>
+              <img src="./images/mike-muller.jpg.png" alt="John Doe" />
+              <p class="text-preset-h3 font-bold mt-4">John Doe</p>
             </div>
           </div>
         </section>
         <!--Testimonial--END-------------------------------------------------------->
         <!--Main Clients------------------------------------------------------------>
         <section class="bg-white py-16 flex flex-col items-stretch">
-          <div class="text-center">
-            <h2 class="text-preset-h2 text-2xl">Our Main Clients</h2>
+          <div class="text-center px-4">
+            <h2 class="text-preset-h2 text-center mt-4 md:mt-8 md:mb-16">
+              Our Main Clients
+            </h2>
           </div>
           <div>
             <div class="flex flex-row justify-evenly invisible md:visible">
-              <img src="./images/js.png" alt="Javascript Logo " />
+              <img src="./images/js.png" alt="Javascript logo " />
               <!--<img src="./images/sass_logo.png" alt="" />-->
-              <img src="./images/html_logo.png" alt="" />
+              <img src="./images/html_logo.png" alt="HTML logo" />
               <div>
-                <img src="./images/css_logo.png" alt="" />
+                <img src="./images/css_logo.png" alt="CSS logo" />
               </div>
               <div>
-                <img src="./images/colorlib.png" alt="" />
+                <img src="./images/colorlib.png" alt="Colorlib logo" />
               </div>
             </div>
             <div class="flex flex-row justify-evenly visible md:invisible">
-              <img src="./images/js.png" alt="Javascript Logo " />
-              <img src="./images/html_logo.png" alt="" />
+              <img src="./images/js.png" alt="Javascript logo " />
+              <img src="./images/html_logo.png" alt="HTML logo" />
             </div>
           </div>
         </section>
@@ -309,13 +352,13 @@
         <!--Awesome----------------------------------------------------------------->
         <section
           id="awesome"
-          class="flex flex-col md:flex-row justify-around items-center mt-8 py-20 bg-gray-100"
+          class="flex flex-col md:flex-row justify-around items-center mt-8 py-20 bg-gray-100 px-4"
         >
-          <div class="text-3xl text-center">
+          <div class="text-preset-h2 text-center">
             Do you like this awesome WordPress theme?
           </div>
           <button
-            class="bg-buttonblue my-6 mx-2 py-4.5 w-50 text-preset-button"
+            class="bg-buttonblue my-6 mx-2 py-4.5 w-full md:w-50 text-preset-button"
           >
             DOWNLOAD NOW
           </button>
@@ -323,9 +366,9 @@
         <!--Awesome--END------------------------------------------------------------>
       </main>
       <footer
-        class="bg-black text-white flex flex-row flex-wrap justify-between pt-48 pb-16 px-5"
+        class="bg-black text-white flex flex-row flex-wrap justify-between pt-12 pb-8 px-5"
       >
-        <div class="text-preset-h2-light my-3 mx-3">
+        <div class="text-white text-sm my-3 mx-3">
           Theme by
           <a class="cursor-pointer" href="https://colorlib.com/">
             <b>Colorlib</b></a
