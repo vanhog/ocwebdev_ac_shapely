@@ -213,6 +213,12 @@
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
   }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
+  .mx-12 {
+    margin-inline: calc(var(--spacing) * 12);
+  }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
@@ -306,6 +312,9 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
+  .w-800 {
+    width: calc(var(--spacing) * 800);
+  }
   .w-full {
     width: 100%;
   }
@@ -338,6 +347,9 @@
   }
   .items-end {
     align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .items-stretch {
     align-items: stretch;
@@ -458,6 +470,9 @@
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
@@ -556,6 +571,11 @@
       visibility: visible;
     }
   }
+  .md\:mx-6 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 6);
+    }
+  }
   .md\:mt-8 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 8);
@@ -601,6 +621,16 @@
       width: calc(var(--spacing) * 160);
     }
   }
+  .md\:w-163 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 163);
+    }
+  }
+  .md\:w-184 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 184);
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -621,9 +651,39 @@
       background-position: right;
     }
   }
+  .lg\:mx-12 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:h-auto {
+    @media (width >= 64rem) {
+      height: auto;
+    }
+  }
+  .lg\:h-screen {
+    @media (width >= 64rem) {
+      height: 100vh;
+    }
+  }
+  .lg\:w-88 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 88);
+    }
+  }
+  .lg\:w-163 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 163);
+    }
+  }
+  .lg\:w-180 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 180);
     }
   }
   .lg\:w-full {
@@ -634,6 +694,16 @@
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:bg-auto {
+    @media (width >= 64rem) {
+      background-size: auto;
+    }
+  }
+  .lg\:bg-contain {
+    @media (width >= 64rem) {
+      background-size: contain;
     }
   }
 }
