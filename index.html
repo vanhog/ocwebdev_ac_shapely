@@ -10,21 +10,66 @@
     class="bg-gray-400 font-raleway flex flex-col justify-center items-center"
   >
     <div class="w-96 md:w-3xl lg:w-full">
-      <header class="bg-white flex justify-evenly items-center text-center p-4">
-        <div class="text-preset-h2">REPLICA of COLORLIB SHAPELY THEME</div>
-        <div class="text-preset-h2">
-          <nav class="lg:hidden">HAM</nav>
-          <nav class="hidden lg:inline">
-            <ul class="flex justify-evenly gap-12 text-menu">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">ABOUTTHETESTS</a></li>
-              <li><a href="#">LEVEL1</a></li>
-              <li><a href="#">SHOP</a></li>
-            </ul>
+      <header
+        class="bg-white flex flex-col lg:flex-row justify-evenly items-baseline text-center p-4"
+      >
+        <div
+          class="flex flex-row gap-30 flex-auto justify-evenly items-baseline"
+        >
+          <div class="text-preset-h2">REPLICA of COLORLIB SHAPELY THEME</div>
+          <nav
+            class="lg:hidden"
+            aria-label="Hamburger Menu"
+            onclick="handleClick()"
+          >
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 20 20"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            >
+              <title>hamburger</title>
+              <desc>Created with Sketch Beta.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                sketch:type="MSPage"
+              >
+                <g
+                  id="Icon-Set-Filled"
+                  sketch:type="MSLayerGroup"
+                  transform="translate(-212.000000, -888.000000)"
+                  fill="#000000"
+                >
+                  <path
+                    d="M230,904 L214,904 C212.896,904 212,904.896 212,906 C212,907.104 212.896,908 214,908 L230,908 C231.104,908 232,907.104 232,906 C232,904.896 231.104,904 230,904 L230,904 Z M230,896 L214,896 C212.896,896 212,896.896 212,898 C212,899.104 212.896,900 214,900 L230,900 C231.104,900 232,899.104 232,898 C232,896.896 231.104,896 230,896 L230,896 Z M214,892 L230,892 C231.104,892 232,891.104 232,890 C232,888.896 231.104,888 230,888 L214,888 C212.896,888 212,888.896 212,890 C212,891.104 212.896,892 214,892 L214,892 Z"
+                    id="hamburger"
+                    sketch:type="MSShapeGroup"
+                  ></path>
+                </g>
+              </g>
+            </svg>
           </nav>
         </div>
+        <nav class="hidden lg:inline lg:pe-24" id="navigation">
+          <ul
+            class="flex flex-col lg:flex-row flex-auto lg:gap-10 text-menu text-preset-h2"
+          >
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">ABOUTTHETESTS</a></li>
+            <li><a href="#">LEVEL1</a></li>
+            <li><a href="#">SHOP</a></li>
+          </ul>
+        </nav>
       </header>
       <main class="bg-white">
         <!--Hero---------------------------------------------------------------->
@@ -506,6 +551,7 @@
           </div>
         </div>
       </footer>
+      <script src="./script.js"></script>
     </div>
     <div class="attribution mt-6">
       Challenge by
