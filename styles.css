@@ -36,6 +36,10 @@
   .text-preset-button {
     @apply font-bold text-xs tracking-[1px] leading-6 text-white text-center;
   }
+
+  .text-menu {
+    @apply font-medium text-sm tracking-[-1px] leading-13;
+  }
   .attribution {
     @apply text-sm my-6 text-center;
   }
